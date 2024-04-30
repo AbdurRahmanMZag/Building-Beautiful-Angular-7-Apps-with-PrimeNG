@@ -6,7 +6,7 @@
   "scripts": {
     "404": "shx cp dist/index.html dist/404.html",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng serve",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -17,6 +17,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "7.2.8",
+    "@angular/cdk": "7.3.4",
     "@angular/common": "7.2.8",
     "@angular/compiler": "7.2.8",
     "@angular/core": "7.2.8",
@@ -25,7 +26,6 @@
     "@angular/platform-browser": "7.2.8",
     "@angular/platform-browser-dynamic": "7.2.8",
     "@angular/router": "7.2.8",
-    "@angular/cdk": "7.3.4",
     "chart.js": "2.7.3",
     "core-js": "2.5.1",
     "dexie": "2.0.4",
@@ -49,6 +49,7 @@
     "@types/jasmine": "2.8.2",
     "@types/node": "7.0.18",
     "codelyzer": "4.5.0",
+    "cross-env": "^7.0.3",
     "jasmine-core": "2.8.0",
     "jasmine-spec-reporter": "4.2.1",
     "karma": "1.7.1",
